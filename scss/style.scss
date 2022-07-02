@@ -322,9 +322,20 @@ p {
     }
 }
 
+@media (max-width: 320px){
+    #footer{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 480px) {
     html {
         overflow-x: hidden;
+    }
+    h1{
+        font-size: 4rem;
     }
     #hm {
         display: flex;
@@ -341,7 +352,7 @@ p {
 
     .box {
         img {
-            width: 100px;
+            width: 150px;
             max-width: 100%;
         }
     }
@@ -360,7 +371,16 @@ p {
             text-align: center;
         }
     }
+#footer{
+    width: 100%;
+    .container{
+        width: 230px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
     .footer {
+
         width: 100%;
         background: $heading-color;
         overflow-x: hidden;
@@ -396,6 +416,7 @@ p {
         }
     }
     .footer{
+        width: 100%;
         .list{
             margin-right: 30px; 
         }
