@@ -57,6 +57,8 @@ p {
 }
 .header .hamburger-menu {
   display: none;
+  position: fixed;
+  padding: 10px;
 }
 .header #menu__toggle {
   opacity: 0;
@@ -154,6 +156,9 @@ p {
 .header .en,
 .header .ua {
   color: #000;
+}
+.header .en {
+  box-shadow: 1px snow;
 }
 
 .hero {
@@ -309,12 +314,79 @@ p {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 480px) {
-  .hamburger-menu {
-    display: block;
+@media (max-width: 480px) {
+  html {
+    overflow-x: hidden;
   }
 
-  .menu {
+  #hm {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .menu,
+.toggle {
     display: none;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .box img {
+    width: 100px;
+    max-width: 100%;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .volunteers .worker-item {
+    display: block;
+    text-align: center;
+  }
+
+  .contacts .unflex {
+    display: block;
+    text-align: center;
+  }
+
+  .footer {
+    width: 100%;
+    background: #090e53;
+    overflow-x: hidden;
+  }
+  .footer .container {
+    width: 230px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: #090e53;
+  }
+  .footer p {
+    font-size: 1rem;
+  }
+  .footer ul {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #090e53;
+  }
+  .footer .logo__footer {
+    margin-left: 50px;
+    background: #090e53;
+  }
+}
+@media (max-width: 768px) {
+  .project .box {
+    width: 50%;
+  }
+
+  .footer .list {
+    margin-right: 30px;
   }
 }
