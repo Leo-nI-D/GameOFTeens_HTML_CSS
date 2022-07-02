@@ -9,6 +9,7 @@ html {
   font-size: 16px;
   line-height: 1.2;
   font-family: "Roboto", sans-serif;
+  background: #d6d2d2;
 }
 
 ul,
@@ -19,6 +20,29 @@ ol {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  color: #090e53;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #090e53;
+}
+
+h3 {
+  font-size: 1.745rem;
+  font-weight: 700;
+  color: #090e53;
+}
+
+p {
+  font-size: 1.3rem;
+  color: #7d8609;
 }
 
 .container {
@@ -54,4 +78,61 @@ a {
 .header .en,
 .header .ua {
   color: #000;
+}
+
+.hero {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.hero .sec-logo {
+  font-family: "The Nautigal", cursive;
+  color: rgb(10, 63, 10);
+}
+.hero p {
+  margin-top: 30px;
+}
+
+.project {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.project h2 {
+  margin-bottom: 30px;
+}
+.project .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.project .box {
+  width: 33.33%;
+  margin-bottom: 20px;
+}
+.project .more-item {
+  display: none;
+  margin-bottom: 20px;
+}
+.project input {
+  display: none;
+  cursor: pointer;
+}
+.project .ll {
+  display: none;
+}
+.project #btn:checked ~ ul .more-item {
+  display: inline-block;
+}
+.project #btn:checked ~ label .ll {
+  display: inline-block;
+}
+.project #btn:checked ~ label .lm {
+  display: none;
+}
+.project label {
+  background: rgb(10, 63, 10);
+  color: #7d8609;
+  padding: 9px 25px;
+  border-radius: 30px;
+  text-transform: uppercase;
 }

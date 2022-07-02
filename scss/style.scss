@@ -1,6 +1,8 @@
 $dark-green-color: rgb(10, 63, 10);
 $black-color: #000;
-
+$heading-color: #090e53;
+$text-color: #7d8609;
+$bg-color: #d6d2d2;
 *,
 *::after,
 *::before {
@@ -12,6 +14,7 @@ html {
     font-size: 16px;
     line-height: 1.2;
     font-family: "Roboto", sans-serif;
+    background: $bg-color;
 }
 
 ul,
@@ -22,6 +25,27 @@ ol {
 
 a {
     text-decoration: none;
+}
+h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    color: $heading-color;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $heading-color;
+}
+
+h3 {
+    font-size: 1.745rem;
+    font-weight: 700;
+    color: $heading-color;
+}
+
+p {
+    font-size: 1.3rem;
+    color: $text-color;
 }
 .container {
     width: 1300px;
@@ -53,7 +77,65 @@ a {
         color: $black-color;
     }
     .en,
-    .ua{
+    .ua {
         color: $black-color;
+    }
+}
+
+.hero {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .sec-logo {
+        font-family: "The Nautigal", cursive;
+        color: $dark-green-color;
+    }
+    p {
+        margin-top: 30px;
+    }
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 100px;
+    h2{
+        margin-bottom: 30px;
+    }
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .box {
+        width: 33.33%;
+        margin-bottom: 20px;
+    }
+    .more-item {
+        display: none;
+        margin-bottom: 20px;
+    }
+    input {
+        display: none;
+        cursor: pointer;
+    }
+
+    .ll{
+        display: none;
+    }
+    #btn:checked ~ ul .more-item {
+        display: inline-block;
+    }
+    #btn:checked~label .ll{
+        display: inline-block;
+    }
+    #btn:checked~label .lm{
+        display: none;
+    }
+    label{
+        background: $dark-green-color;
+        color:$text-color;
+        padding: 9px 25px;
+        border-radius: 30px;
+        text-transform: uppercase;
     }
 }
