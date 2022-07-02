@@ -188,3 +188,18 @@ p {
         text-transform: uppercase;
     }
 }
+
+.contacts{
+    margin-bottom: 100px;
+    h2{
+        background: url(../img/call-center.jpg) center no-repeat;
+        text-align: center;
+        padding: 100px;
+        text-transform: uppercase;
+    }
+    .unflex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
