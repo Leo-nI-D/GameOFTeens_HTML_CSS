@@ -98,7 +98,7 @@ p {
 .project {
     text-align: center;
     margin-bottom: 100px;
-    h2{
+    h2 {
         margin-bottom: 30px;
         text-transform: uppercase;
     }
@@ -120,47 +120,47 @@ p {
         cursor: pointer;
     }
 
-    .ll{
+    .ll {
         display: none;
     }
     #btn:checked ~ ul .more-item {
         display: inline-block;
     }
-    #btn:checked~label .ll{
+    #btn:checked ~ label .ll {
         display: inline-block;
     }
-    #btn:checked~label .lm{
+    #btn:checked ~ label .lm {
         display: none;
     }
-    label{
+    label {
         background: $dark-green-color;
-        color:$text-color;
+        color: $text-color;
         padding: 9px 25px;
         border-radius: 30px;
         text-transform: uppercase;
     }
 }
 
-.volunteers{
+.volunteers {
     margin-bottom: 100px;
-    h2{
+    h2 {
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 50px;
     }
-    .worker-item{
+    .worker-item {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5px;
         margin-top: 10px;
     }
-    h3{
+    h3 {
         font-size: 1.4rem;
         font-weight: 500;
         text-transform: uppercase;
     }
-    img{
+    img {
         width: 250px;
         max-width: 100%;
         height: 205px;
@@ -168,38 +168,70 @@ p {
     }
 }
 
-.army-supprot{
+.army-supprot {
     text-align: center;
     margin-bottom: 100px;
-    h2{
+    h2 {
         text-transform: uppercase;
         margin-bottom: 20px;
     }
-    h3{
+    h3 {
         text-transform: uppercase;
         margin-top: 20px;
     }
 }
 
-.about-us{
+.about-us {
     text-align: center;
     margin-bottom: 100px;
-    h2{
+    h2 {
         text-transform: uppercase;
     }
 }
 
-.contacts{
+.contacts {
     margin-bottom: 100px;
-    h2{
+    h2 {
         background: url(../img/call-center.jpg) center no-repeat;
         text-align: center;
         padding: 100px;
         text-transform: uppercase;
     }
-    .unflex{
+    .unflex {
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 5px;
+    }
+}
+
+.footer {
+    background: $heading-color;
+    padding: 100px;
+    .logo__footer {
+        font-family: "The Nautigal", cursive;
+        color: $text-color;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    a {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #fff;
+    }
+    p {
+        color: gray;
+        font-size: 1.5rem;
     }
 }
