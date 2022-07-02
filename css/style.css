@@ -164,3 +164,24 @@ p {
   height: 205px;
   max-height: 100%;
 }
+
+.army-supprot {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.army-supprot h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.army-supprot h3 {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.about-us {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.about-us h2 {
+  text-transform: uppercase;
+}
